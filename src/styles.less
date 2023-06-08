@@ -1,1 +1,299 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    line-height: 30px;
+}
+
+:root {
+    --len-black-1: #000;
+    --len-black-2: #333;
+    --len-black-3: #666;
+    --len-green-0: #3e9e43;
+    --len-green-1: #64FF74;
+    --len-green-2: #95fd76;
+    --len-green-3: #b8fd98;
+    --len-green-shadow: rgba(67, 61, 153, .5);
+    --len-green-rgb-1: 111, 100, 255;
+    --len-green-rgb-2: 138, 118, 253;
+    --len-green-rgb-3: 167, 152, 253;
+    --len-yellow-1: #ffcd1c;
+    --len-yellow-2: #ffd749;
+    --len-yellow-3: #ffe177;
+    --len-green-1: #00d495;
+    --len-green-2: #33ddaa;
+    --len-green-3: #66e5bf;
+    --len-blue-1: #00bdff;
+    --len-blue-2: #33caff;
+    --len-blue-3: #66d7ff;
+    --len-red-1: #fc4e69;
+    --len-red-2: #fd7187;
+    --len-red-3: #fd95a5;
+    --len-body-font-family: 'Inter', sans-serif;
+    --bs-blue: #334AC0;
+    --bs-indigo: #50f210;
+    --bs-green: #75c142;
+    --bs-pink: #d63384;
+    --bs-red: #692340;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #F1B980;
+    --bs-green: var(--gen-green-1);
+    --bs-teal: #077C76;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #8C98A4;
+    --bs-gray-dark: #51596C;
+    --bs-gray-100: #F9FAFC;
+    --bs-gray-200: #F8FAFD;
+    --bs-gray-300: #E7EAF3;
+    --bs-gray-400: #BDC5D1;
+    --bs-gray-500: #97A4AF;
+    --bs-gray-600: #8C98A4;
+    --bs-gray-700: #677788;
+    --bs-gray-800: #51596C;
+    --bs-gray-900: #224125;
+    --bs-primary: var(--gen-green-1);
+    --bs-secondary: #5a6c51;
+    --bs-success: #077C76;
+    --bs-info: #334AC0;
+}
+
+header {
+    width: 100%;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #fff;
+    color: #51596c;
+}
+
+.cards {
+    justify-content: space-around;
+}
+
+h1 {
+    color: #000;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 15px 30px;
+    font-family: var(--len-body-font-family);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: var(--len-green-2);
+}
+
+.btn-gen {
+    cursor: pointer;
+    padding: 15px 30px;
+    margin: 5px;
+    font-family: var(--len-body-font-family);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    color: #fff;
+    background-color: var(--len-green-1);
+}
+
+.btn-gen:hover {
+    background-color: #fff;
+    border: var(--len-green-2) solid 1px;
+    color: var(--len-green-2);
+    transition: all .2s ease-in-out;
+}
+
+.btn-outline-gen {
+    color: var(--len-green-1);
+    border-color: var(--len-green-1);
+    background-color: transparent;
+}
+
+.btn-outline-gen:hover {
+    color: #fff
+}
+
+.middle-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ofertas-vantagens {
+    border: solid 1px;
+    border-color: rgba(0, 34, 28, .1);
+    padding: 50px
+}
+
+.nosso {
+    font-size: 20px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.app-len {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--len-green-1);
+    margin-bottom: 30px;
+}
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.stores-link {
+    display: flex;
+    justify-content: center;
+}
+
+.store-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #212121;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+.icon-cards {
+    margin: 100px 0;
+    background-color: #f1f1f1;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+}
+
+.account .btn {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500px;
+    padding: 15px 30px;
+}
+
+.account h5 {
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--len-green-2);
+}
+
+.quem-somos {
+    margin: 100px 0;
+    // padding: 100px 0 0;
+    color: #fff;
+    background-color: var(--len-green-1);
+}
+
+.quem-somos h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.container-quem-somos {
+    // display: flex;
+    // flex-direction: row;
+}
+
+.text-quem-somos {
+    width: 50%;
+    margin: 0 180px 0 150px;
+    padding: 0 0 0 100px;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.row-quem-somos {
+    display: flex;
+    flex-direction: row;
+}
+
+.ilustration {
+    padding: 130px 100px 0 0;
+}
+
+
+.row-fale-com-a-gente {    
+    width: 65%;
+    margin-left: 20px;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.row-fale-com-a-gente h1 {
+    font-family: 'Inter';
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.row-fale-com-a-gente p {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.container-fale-com-a-gente {
+    display: flex;
+    flex-direction: row;   
+}
+
+.form {
+    padding: 30px;
+    box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.25);
+    color: #505050;
+    width: 30%;
+}
+
+.firstname-lastname {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-label {
+    margin: 0px;
+}
+
+.form input {
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.radio-button {
+    margin: 10px;
+}
+
+.interest-box {
+    border: 2px solid #c4c4c4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-text {
+    display: flex;
+    justify-content: center;
+}
+
