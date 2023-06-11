@@ -3,7 +3,6 @@
     padding: 0;
     align-items: center;
     line-height: 30px;
-    max-width: 100%;
 }
 
 :root {
@@ -60,13 +59,12 @@
 }
 
 .container {
+    width: 100%;
     margin: 0;
     padding: 0;
-    min-width: 100%;
 }
 
 body {
-    // margin: 0 100px;
     align-items: center;
     background-color: #fff;
     color: #51596c;
@@ -124,16 +122,44 @@ h1 {
     color: #fff
 }
 
+.middle-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 150px 150px 30px;
+    width: 80%;
+}
+
 .ofertas-vantagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: solid 1px;
     border-color: rgba(0, 34, 28, .1);
-    padding: 50px
+    padding: 50px;
+    width: 50%;
+}
+
+.ofertas-vantagens h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.ofertas-vantagens p {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .nosso {
     font-size: 20px;
     color: #000;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .app-len {
@@ -162,6 +188,15 @@ h1 {
     background-color: #212121;
     margin: 2px;
     border-radius: 6px;
+}
+
+.icon-cards {
+    margin: 100px 0;
+    padding: 80px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #beebbe;
 }
 
 .account {
@@ -198,6 +233,7 @@ a {
     color: #fff;
     font-size: 60px;
     font-weight: 900;
+    margin-bottom: 50px;
 }
 
 .text-quem-somos {
@@ -206,7 +242,12 @@ a {
     padding: 0 0 0 100px;
     font-family: 'Inter', sans-serif;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+.quem-somos p {
+    line-height: 2.7rem;
+
 }
 
 .row-quem-somos {
@@ -220,18 +261,20 @@ a {
 
 
 .row-fale-com-a-gente {    
-    width: 65%;
+    width: 60%;
     margin-left: 20px;
-    padding: 200px;
+    padding: 0 200px 0;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 }
 
 .row-fale-com-a-gente h1 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 50px;
     font-weight: 900;
+    margin: 50px;
+    line-height: 45px;
 }
 
 .row-fale-com-a-gente p {
@@ -241,7 +284,8 @@ a {
 
 .container-fale-com-a-gente {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
+    margin-right: 100px;
 }
 
 .form {
@@ -258,6 +302,7 @@ a {
 
 .form-label {
     margin: 0px;
+    margin-top: 15px;
 }
 
 .form input {
@@ -283,3 +328,10 @@ a {
     justify-content: center;
 }
 
+.footer {
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #beebbe;
+}
